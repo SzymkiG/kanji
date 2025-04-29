@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: 'Sakurata';
+    src: url('go3v2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Naganoshi';
+    src: url('Naganoshi.ttf') format('truetype');
+}
+
+
+.card {
+    aspect-ratio: 1; 
+    font-family: 'Naganoshi';
+    font-size: 4rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none; 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.08);
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column; 
+    border: none;
+}
+.card p{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font:bolder
+  }
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+.modal-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.display-1 {
+    font-family: 'Naganoshi';
+}
+
+.display-4 {
+    font-family: 'Sakurata';
+}
+
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        font-size: 2.5rem;
+    }
+}
+
+
+.hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
